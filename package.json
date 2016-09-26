@@ -1,10 +1,10 @@
 {
-  "name": "reduxsauce",
+  "name": "monaredux",
   "version": "0.2.0",
-  "description": "Some aesthetic toppings for your Redux meal.",
+  "description": "It's a fork from reduxsauce on github <https://github.com/skellock/reduxsauce>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/skellock/reduxsauce.git"
+    "url": "https://github.com/sanqianpiao/reduxsauce.git"
   },
   "main": "./dist/reduxsauce.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "keywords": [
     "redux"
   ],
-  "author": "Steve Kellock <steve@kellock.ca>",
+  "author": "sanqianpiao <sanqian@gmail.com>",
   "license": "MIT",
   "files": [
     "dist/reduxsauce.js",

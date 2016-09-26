@@ -7,9 +7,10 @@ test('responds with violence if not passed a string', (t) => {
 })
 
 test('creates an object when passed a string', (t) => {
-  const types = createTypes('one')
+  const types = createTypes('one', 'PREFIX_')
   t.truthy(types)
   t.true(R.is(Object, types))
+  // console.log(types)
 })
 
 test('creates an object with the right keys and values', (t) => {
@@ -59,4 +60,3 @@ test('handles multiple <CR> delimiters', (t) => {
   t.is(keys[2], 'THREE')
   t.is(values[2], 'THREE')
 })
-

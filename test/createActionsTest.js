@@ -8,9 +8,14 @@ test('throws an error if passed crap', t => {
 })
 
 test('has Creators and Types', t => {
-  const { Creators, Types } = createActions({ one: null })
+  const { Creators, Types } = createActions({ one: null }, 'PREFIX_')
   t.truthy(Creators)
   t.truthy(Types)
+  console.log('has Creators and Types')
+  console.log(Types)
+  for(let type in Creators) {
+    console.log(Creators[type]())
+  }
 })
 
 test('types are snake case', t => {
